@@ -20,7 +20,7 @@ export const Scene = () => {
       <OrbitControls enableZoom={false} enablePan={false} />
 
       {/* Scroll controls to drive the animation, setting pages dictates the height of the scrollable area */}
-      <ScrollControls pages={5} damping={0.25}>
+      <ScrollControls pages={5} damping={0.25} style={{ pointerEvents: "none" }}>
         <ScrollManager />
         <UniverseStages />
       </ScrollControls>

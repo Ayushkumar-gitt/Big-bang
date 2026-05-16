@@ -9,3 +9,7 @@ body {
   background-color: #000;
   color: white;
 }
+
+
+/* Fix ScrollControls blocking OrbitControls */
+#root > div > div { pointer-events: none !important; }
